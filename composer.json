@@ -1,0 +1,28 @@
+{
+  "name": "hyve-innovate/mandelbrot-kata",
+  "description": "Draw Mandelbrot Set using Test-First Programming approach",
+  "type": "project",
+  "require": {
+    "ext-gd": "*",
+    "php-decimal/php-decimal": "^1.1",
+    "phpunit/phpunit": "^9.0",
+    "markbaker/complex": "^1.4",
+    "josecelano/php-complex": "1.0"
+  },
+  "authors": [
+    {
+      "name": "HYVE Innovate Digital SL",
+      "email": "laspalmas@hyve.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Mandelbrot\\": "src/Mandelbrot"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Mandelbrot\\": "tests/Mandelbrot"
+    }
+  }
+}
