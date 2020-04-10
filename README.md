@@ -38,16 +38,6 @@ Mandelbrot Set is inside those limits.
 
 ![Mandelbrot Graph](https://raw.githubusercontent.com/HyveInnovate/mandelbrot-kata/master/mandelbrot-graph.png)
 
-### Branches
-
-There is a branch for each language with the scaffolding code.
-
-* php
-
-And different solutions in different branches like:
-
-* php-solution1
-
 ### Prerequisites
 
 PHP
