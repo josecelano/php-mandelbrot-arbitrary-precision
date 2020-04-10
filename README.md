@@ -102,3 +102,7 @@ docker run -it --rm \
 ## Acknowledgments
 
 * This kata was inspired by: https://github.com/edyoung/gnofract4d
+
+## Similar projects
+
+* https://github.com/ziqbal/mandelbrot
