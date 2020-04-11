@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e746fcda5be66d03c5a8bfbf352f117c",
+    "content-hash": "22b30efc99a7b294fd927f48d24f72c0",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -64,16 +64,16 @@
         },
         {
             "name": "josecelano/php-complex",
-            "version": "v1.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/josecelano/php-complex.git",
-                "reference": "f09284d6181bcf66473ee82eb40094adac4ad72b"
+                "reference": "4667f48f95f682c6d74fdc0340d8b7f5ad6ec308"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/josecelano/php-complex/zipball/f09284d6181bcf66473ee82eb40094adac4ad72b",
-                "reference": "f09284d6181bcf66473ee82eb40094adac4ad72b",
+                "url": "https://api.github.com/repos/josecelano/php-complex/zipball/4667f48f95f682c6d74fdc0340d8b7f5ad6ec308",
+                "reference": "4667f48f95f682c6d74fdc0340d8b7f5ad6ec308",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
                 }
             ],
             "description": "PHP Complex class implemented with arbitrary-precision decimal arithmetic",
-            "time": "2020-04-09T20:09:21+00:00"
+            "time": "2020-04-11T15:16:00+00:00"
         },
         {
             "name": "markbaker/complex",

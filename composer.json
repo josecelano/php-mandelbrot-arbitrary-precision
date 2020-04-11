@@ -7,7 +7,7 @@
     "php-decimal/php-decimal": "^1.1",
     "phpunit/phpunit": "^9.0",
     "markbaker/complex": "^1.4",
-    "josecelano/php-complex": "1.0"
+    "josecelano/php-complex": "^1.1.0"
   },
   "authors": [
     {
