@@ -7,7 +7,7 @@ use ArbitraryPrecisionComplex\DecimalFactory;
 
 class Set {
 
-    public static function contains(Complex $c, int $iterations = 200) {
+    public static function contains(Complex $c, int $iterations = 100) {
         $z0 = new Complex(DecimalFactory::zero(), DecimalFactory::zero());
         $z = $z0;
 

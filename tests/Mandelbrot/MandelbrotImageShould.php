@@ -11,7 +11,7 @@ class MandelbrotImageShould extends BaseTestClass {
      * @throws Exception
      */
     public function generate_a_mandelbrot_image_with_same_width_and_height() {
-        $resolution = 160;
+        $resolution = 1024;
         $image = new Image($resolution);
 
         $fileDir = __DIR__ . '/../output';
