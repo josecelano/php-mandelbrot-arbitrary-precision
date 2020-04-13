@@ -11,7 +11,10 @@ class MandelbrotImageShould extends BaseTestClass {
      * @throws Exception
      */
     public function generate_a_mandelbrot_image_with_same_width_and_height() {
-        $resolution = 1024;
+        https://github.com/josecelano/php-mandelbrot-arbitrary-precision/issues/3
+        ini_set('memory_limit', '2048M');
+
+        $resolution = 160;
         $image = new Image($resolution);
 
         $fileDir = __DIR__ . '/../output';
