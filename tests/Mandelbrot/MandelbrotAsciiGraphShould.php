@@ -22,7 +22,7 @@ class MandelbrotAsciiGraphShould extends BaseTestClass {
 
         $expectedOutput = implode([
             "  \n",
-            " *"
+            "**"
         ]);
 
         $this->assertEquals($expectedOutput, $output);
@@ -30,9 +30,6 @@ class MandelbrotAsciiGraphShould extends BaseTestClass {
 
     /** @test */
     public function generate_a_mandelbrot_ascii_graph_string_for_a_3x3_string() {
-        // Pending to fix this issue:
-        // https://github.com/josecelano/php-complex/issues/1
-        $this->markTestSkipped();
 
         $asciiGraph = new AsciiGraph(3);
 
@@ -50,19 +47,15 @@ class MandelbrotAsciiGraphShould extends BaseTestClass {
     /** @test */
     public function generate_a_mandelbrot_ascii_graph_string_for_a_4x4_string() {
 
-        // Pending to fix this issue:
-        // https://github.com/josecelano/php-complex/issues/1
-        $this->markTestSkipped();
-
         $asciiGraph = new AsciiGraph(4);
 
         $output = $asciiGraph->generate();
 
         $expectedOutput = implode([
             "    \n",
-            "    \n",
-            " ** \n",
-            "    ",
+            "  * \n",
+            "*** \n",
+            "  * ",
         ]);
 
         $this->assertEquals($expectedOutput, $output);
@@ -71,10 +64,6 @@ class MandelbrotAsciiGraphShould extends BaseTestClass {
     /** @test */
     public function generate_a_mandelbrot_ascii_graph_string_for_a_8x8_string() {
 
-        // Pending to fix this issue:
-        // https://github.com/josecelano/php-complex/issues/1
-        $this->markTestSkipped();
-
         $asciiGraph = new AsciiGraph(8);
 
         $output = $asciiGraph->generate();
@@ -82,11 +71,11 @@ class MandelbrotAsciiGraphShould extends BaseTestClass {
         $expectedOutput = implode([
             "        \n",
             "        \n",
-            "        \n",
+            "    *   \n",
             "   **   \n",
-            "  ***   \n",
+            "*****   \n",
             "   **   \n",
-            "        \n",
+            "    *   \n",
             "        ",
         ]);
 
@@ -95,9 +84,6 @@ class MandelbrotAsciiGraphShould extends BaseTestClass {
 
     /** @test */
     public function generate_a_mandelbrot_ascii_graph_string_for_a_160x160_string() {
-        // Pending to fix this issue:
-        // https://github.com/josecelano/php-complex/issues/1
-        $this->markTestSkipped();
 
         $asciiGraph = new AsciiGraph(160);
 

@@ -74,13 +74,13 @@ class MandelbrotSetShould extends BaseTestClass {
     public function some_complex_number_that_belong_to_mandelbrot_set() {
         return [
             [self::c('0', '0')],
-            // TODO: it's failing
-            // Pending to fix this issue:
+            // TODO: Pending to fix this issue when pow function is used in mandelbrot formula.
             // https://github.com/josecelano/php-complex/issues/1
-            //[self::c('-1', '0')],
+            [self::c('-1', '0')],
             [self::c('-0.5', '0')],
             [self::c('-0.5', '0.5')],
             [self::c('-0.5', '0.5')],
+            [self::c('-2', '0')],
         ];
     }
 
@@ -92,7 +92,6 @@ class MandelbrotSetShould extends BaseTestClass {
             [self::c('0', '2')],
             [self::c('0', '-2')],
             [self::c('-2', '-2')],
-            [self::c('-2', '0')],
         ];
     }
 }
