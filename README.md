@@ -36,7 +36,7 @@ You can represent those complex number in a graph where x-axis is the real part 
 You have to draw the portion of the graph between -2 and 2 real and imaginary parts.
 Mandelbrot Set is inside those limits.
 
-![Mandelbrot Graph](https://raw.githubusercontent.com/HyveInnovate/mandelbrot-kata/master/mandelbrot-graph.png)
+![Mandelbrot Graph](https://raw.githubusercontent.com/HyveInnovate/php-mandelbrot/master/mandelbrot-graph.png)
 
 ### Prerequisites
 
@@ -54,12 +54,12 @@ composer install
 
 PHP with docker
 ```
-docker build -t mandelbrot-kata .
+docker build -t php-mandelbrot .
 docker run -it --rm \
 	-v "$PWD":/usr/src/app \
 	-w /usr/src/app \
 	-u $(id -u ${USER}):$(id -g ${USER}) \
-	mandelbrot-kata \
+	php-mandelbrot \
     composer install
 ```
 
@@ -76,7 +76,7 @@ docker run -it --rm \
 	-v "$PWD":/usr/src/app \
 	-w /usr/src/app \
 	-u $(id -u ${USER}):$(id -g ${USER}) \
-	mandelbrot-kata
+	php-mandelbrot
 ```
 
 Execute only one test class
@@ -85,7 +85,7 @@ docker run -it --rm \
 	-v "$PWD":/usr/src/app \
 	-w /usr/src/app \
 	-u $(id -u ${USER}):$(id -g ${USER}) \
-	mandelbrot-kata \
+	php-mandelbrot \
     ./vendor/bin/phpunit --filter 'MandelbrotFormulaShould'
 ```
 

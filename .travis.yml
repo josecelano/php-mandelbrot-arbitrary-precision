@@ -1,0 +1,11 @@
+language: php
+
+services:
+  - docker
+
+before_install:
+  - docker build -t php-mandelbrot .
+  - docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app -u $(id -u ${USER}):$(id -g ${USER}) php-mandelbrot composer install
+
+script:
+  - docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app -u $(id -u ${USER}):$(id -g ${USER}) php-mandelbrot
