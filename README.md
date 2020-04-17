@@ -36,7 +36,7 @@ You can represent those complex number in a graph where x-axis is the real part 
 You have to draw the portion of the graph between -2 and 2 real and imaginary parts.
 Mandelbrot Set is inside those limits.
 
-![Mandelbrot Graph](https://raw.githubusercontent.com/HyveInnovate/php-mandelbrot/master/mandelbrot-graph.png)
+![Mandelbrot Graph](https://raw.githubusercontent.com/josecelano/php-mandelbrot-arbitrary-precision/master/mandelbrot-graph.png)
 
 ### Prerequisites
 
@@ -96,3 +96,40 @@ docker run -it --rm \
 ## Similar projects
 
 * https://github.com/ziqbal/mandelbrot
+
+## Performance
+
+It's very bad. It's not the goal of the project.
+
+For 8192px image:
+* Size: 8192x8192px
+* Iter: 200
+* Decimal precision: 28
+* Time: 179m (2,98h)
+* Performance: 0,17ms/px
+* Min number step: 0,00048828125 (4/8192)
+
+For 16384px image:
+* Size: 16384x16384px
+* Iter: 200
+* Decimal precision: 28
+* Time: 673m (11,21h)
+* Performance: 0,17ms/px
+* Min number step: 0,000244140625 (4/16384)
+
+## TODO
+
+Increase performance:
+* Use [PHP parallel](https://www.php.net/manual/en/parallel.setup.php	)
+* Symmetry real axis.
+* Mapping from pixel to complex number only for one image corner. Calculate next pixel complex from previous complex number.
+
+More fun:
+* Auto zoom.
+* Build only the image for a tile.
+* Add color map (grey scale).
+
+Arbitrary precision:
+* Test it with numbers greater than PHP float precision.
+
+
