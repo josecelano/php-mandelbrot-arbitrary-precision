@@ -120,7 +120,7 @@ For 16384px image:
 ## TODO
 
 Increase performance:
-* Use [PHP parallel](https://www.php.net/manual/en/parallel.setup.php	)
+* Use [PHP parallel](https://www.php.net/manual/en/parallel.setup.php)
 * Symmetry real axis.
 * Mapping from pixel to complex number only for one image corner. Calculate next pixel complex from previous complex number.
 
@@ -128,6 +128,7 @@ More fun:
 * Auto zoom.
 * Build only the image for a tile.
 * Add color map (grey scale).
+* Add JS GUI like this: https://github.com/cslarsen/mandelbrot-js
 
 Arbitrary precision:
 * Test it with numbers greater than PHP float precision.
